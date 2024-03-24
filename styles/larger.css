@@ -1,0 +1,7 @@
+/* Larger CSS */
+@media screen and (min-width: 1024px) {
+    /* Additional styles for even larger screens */
+    main {
+        grid-template-columns: 2fr 1fr; /* Adjust proportions as needed */
+    }
+}
