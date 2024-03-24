@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Welcome to the Chamber of Commerce">
     <title>Chamber of Commerce</title>
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Normalize or Reset CSS -->
+
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="your-website-url">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!-- Custom Styles -->
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
@@ -28,8 +36,47 @@
     </nav>
 
     <main>
-        <h2>Welcome to our Chamber of Commerce</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet libero auctor, finibus lectus et, commodo nulla.</p>
+        <main>
+            <section class="hero">
+                <img src="/chamber/images/hero-image.jpg" alt="Hero Image" class="hero-image">
+            </section>
+        
+            <section class="cta">
+                <h2>Join Our Chamber of Commerce</h2>
+                <p>Discover the benefits of becoming a member today!</p>
+                <a href="#" class="join-button">Join Now</a>
+            </section>
+        
+            <section class="events">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>Event 1</li>
+                    <li>Event 2</li>
+                    <li>Event 3</li>
+                </ul>
+            </section>
+        
+            <section class="weather">
+                <h2>Weather Forecast</h2>
+                <div class="weather-card">
+                    <!-- Weather data goes here -->
+                </div>
+            </section>
+        
+            <section class="spotlights">
+                <h2>Company Spotlights</h2>
+                <div class="spotlight">
+                    <h3>Spotlight 1</h3>
+                    <p>Company description</p>
+                </div>
+                <div class="spotlight">
+                    <h3>Spotlight 2</h3>
+                    <p>Company description</p>
+                </div>
+                <!-- Add more spotlights if needed -->
+            </section>
+        </main>
+        
     </main>
 
     <footer>

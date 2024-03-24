@@ -42,3 +42,49 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* CSS para estilos de las secciones */
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    max-width: 30%;
+
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta .join-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta .join-button:hover {
+    background-color: #0056b3;
+}
+
+.events ul {
+    list-style-type: none;
+}
+
+.weather-card {
+    /* Estilos para la tarjeta meteorológica */
+}
+
+.spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.spotlight {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
