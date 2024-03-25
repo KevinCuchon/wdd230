@@ -15,7 +15,16 @@
         <img src="images/kevin.JPG" alt="Your Profile Image">
         <span>Kevin Cuchon Morales</span>
     </header>
-    
+    <div class="hero">
+        <picture>
+            <!-- Image for mobile view (up to 400px) -->
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <!-- Image for larger views (up to 960px) -->
+            <source srcset="images/hero-medium.jpg" media="(max-width: 960px)">
+            <!-- Fallback image for browsers that don't support srcset -->
+            <img src="images/hero-large.webp" alt="Favorite Latter-day Temple">
+        </picture>
+    </div>
     <nav>
         <!-- Navigation -->
         <ul>
