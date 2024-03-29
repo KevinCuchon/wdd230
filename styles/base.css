@@ -1,9 +1,9 @@
-/* Base CSS */
+
 body {
-    font-family: 'Roboto', sans-serif; /* Apply Google Font */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Your color scheme */
+    background-color: #ffffff; 
 }
 
 header {
@@ -19,8 +19,8 @@ header {
 }
 
 header img {
-    width: 100px; /* Adjust as needed */
-    border-radius: 10%; /* Makes the image round */
+    width: 100px;
+    border-radius: 10%;
     margin-right: 1%;
 }
 
@@ -28,7 +28,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    background-color: #000000; /* Your color scheme */
+    background-color: #000000; 
     margin: 0;
 }
 
@@ -39,19 +39,19 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 10px 20px;
-    color: #fff; /* Your color scheme */
+    color: #fff;
     text-decoration: none;
 }
 
 main {
-    max-width: 1200px; /* Limit width for better readability */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 1200px;
+    margin: 0 auto; 
     padding: 20px;
     
 }
 
 .card {
-    background-color: #222393; /* Your color scheme */
+    background-color: #222393;
     padding: 20px;
     margin-bottom: 20px;
     color: #fff;
@@ -64,9 +64,17 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #fff;
 }
+.map iframe{
+    width: 90%;
+    height: 250px;
+    margin-left: 5%;
+    padding-bottom: 3%;
+}
+
 @media screen and (min-width: 768px) {
-    /* Additional styles for larger screens */
+
     nav ul {
         display: flex;
         justify-content: center;
@@ -81,12 +89,39 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+    .map iframe{
+        width: 90%;
+        height: 400px;
+        margin-left: 5%;
+        padding-bottom: 5%;
+    }
+}
+li{
+    list-style: none;
+    text-decoration: none;
+
+}
+li a{
+    color: #fff;
 }
 
-.hero picture{
-    width: 100%;
+.hero {
+    position: relative;
 }
 
 .hero img{
     width: 100%;
+    height: auto;
 }
+
+.hero span{
+    position: absolute;
+    bottom: 40%;
+    left: 20px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: center;
+}
+
+

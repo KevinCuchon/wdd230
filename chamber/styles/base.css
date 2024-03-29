@@ -42,7 +42,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
-/* CSS para estilos de las secciones */
+
 .hero {
     text-align: center;
 }
@@ -73,9 +73,6 @@ footer {
     list-style-type: none;
 }
 
-.weather-card {
-    /* Estilos para la tarjeta meteorológica */
-}
 
 .spotlights {
     display: grid;

@@ -11,54 +11,59 @@
 </head>
 <body>
     <header>
-        <!-- Profile Photo Lab -->
+
         <img src="images/kevin.JPG" alt="Your Profile Image">
         <span>Kevin Cuchon Morales</span>
     </header>
     <div class="hero">
         <picture>
-            <!-- Image for mobile view (up to 400px) -->
+
             <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-            <!-- Image for larger views (up to 960px) -->
+
             <source srcset="images/hero-medium.jpg" media="(max-width: 960px)">
-            <!-- Fallback image for browsers that don't support srcset -->
+
             <img src="images/hero-large.webp" alt="Favorite Latter-day Temple">
         </picture>
+        <span> Lima Peru</span>
     </div>
     <nav>
-        <!-- Navigation -->
+
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
-            <li><a href="chamber/index.html">Chamber week2</a></li>
-            <li><a href="#">Form</a></li>
+            <li><a href="">Site Plan</a></li>
+            <li><a href="#">Survey</a></li>
         </ul>
     </nav>
     
     <main>
-        <!-- Main Content -->
+
         <h1>WDD 230: Web Frontend Development</h1>
         
         <section class="card" id="card2">
             <h2>Learning Activities</h2>
             <ul>
-                <!-- Learning activities will be populated throughout the course -->
-                <li><a href="#">Activity 1</a></li>
-                <li><a href="#">Activity 2</a></li>
-                <li><a href="#">Activity 3</a></li>
+
+                <li><a href="#">Week 01</a></li>
+                <li><a href="chamber/index.html">Week 02</a></li>
+                <li><a href="#">Week 03</a></li>
             </ul>
         </section>
         
         <section class="card">
             <h2>Information</h2>
-            <!-- Information placeholders about weather, number of visits, etc. -->
+
             <p>Weather: Sunny</p>
-            <p>Visits: 100</p>
+            <p>Visits: <span id="visit-counter">0</span></p>
         </section>
     </main>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.0394427532106!2d-71.57235160027496!3d-16.39681625874338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a75c606cae7%3A0x29d965a3777825b8!2sAv.%20Los%20Incas%2C%20Cerro%20Colorado%2004014!5e0!3m2!1ses-419!2spe!4v1711690036387!5m2!1ses-419!2spe"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
     
     <footer>
-        <!-- Footer -->
+
         <p>&copy; <span id="currentYear"></span> Kevin Edison Cuchon Morales - Arequipa - Peru</p>
         <p id="lastModified"></p>
     </footer>
