@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
 }
 
 header {
@@ -10,6 +9,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    width: 100%;
 }
 
 nav {
@@ -29,59 +29,107 @@ nav ul li {
     margin-right: 20px;
 }
 
-main {
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.form-container {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.membership-benefits {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .form-container,
+    .membership-benefits {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .membership-benefits {
+        float: right;
+        width: 50%;
+    }
+    .form-container {
+        width: 50%;
+        float: left;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999; /* Para asegurar que el footer esté por encima del contenido */
+    }
+}
+
+/* Resto del código CSS... */
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.hero {
-    text-align: center;
-}
-
-.hero img {
-    max-width: 30%;
-
-}
-
-.cta {
-    text-align: center;
-}
-
-.cta .join-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta .join-button:hover {
-    background-color: #0056b3;
-}
-
-.events ul {
-    list-style-type: none;
+    z-index: 999; /* Para asegurar que el footer esté por encima del contenido */
 }
 
 
-.spotlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.spotlight {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
