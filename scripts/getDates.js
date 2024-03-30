@@ -23,3 +23,17 @@ lastModifiedElem.textContent = "Last modified: " + document.lastModified;
         document.getElementById('visit-counter').textContent = visitCount;
     });
 
+const hamburguerElement = document.querySelector('#myButton');
+const navElement = document.querySelector('#animateme');
+
+hamburguerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburguerElement.classList.toggle('open');
+})
+
+const myBtn = document.querySelector('#darkBtn');
+const main = document.querySelector('main');
+
+myBtn.addEventListener('click',() =>{
+    main.classList.toggle('dark');
+})

@@ -8,4 +8,25 @@
     .hero span{
         font-size: 2rem;
     }
+
+    #myButton{
+        display: none;
+    }
+    ul.menulinks, ul.menulinks.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul.menulinks a:hover{
+        color: orange;
+    }
+    nav{
+        grid-template-rows: 1fr;
+    }
+    #darkBtn{
+        position: absolute;
+        cursor: pointer;
+        top: 1vw;
+        right: 2vw;
+        width: 3rem;
+    }
 }

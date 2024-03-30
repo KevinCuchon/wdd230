@@ -16,6 +16,7 @@ header {
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
+    position: relative;
 }
 
 header img {
@@ -23,24 +24,71 @@ header img {
     border-radius: 10%;
     margin-right: 1%;
 }
+nav{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid 0.5s ease-out;
+    background-color: white; 
+}
 
-nav ul {
+#myButton::before{
+    content: "=";
+}
+#myButton{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 44px;
+    text-align: right;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: 0;
+    right: 2vw;
+}
+
+nav ul{
+    overflow: hidden;
+}
+
+nav.open{
+    grid-template-rows: 1fr;
+}
+
+ul.menulinks li a{
+    display: block;
+    padding: .75rem 2vw;
+    color: navy;
+    text-decoration: none;
+}
+ul.menulinks{
+
     list-style-type: none;
     padding: 0;
-    text-align: center;
-    background-color: #000000; 
+    background-color: white; 
     margin: 0;
 }
 
-nav ul li {
-    display: block;
+
+#myButton.open::before{
+    content: "x";
+}
+ul.menulinks li.current-menu-item a{
+    color: red;
 }
 
-nav ul li a {
-    display: block;
-    padding: 10px 20px;
+#darkBtn{
+    position: absolute;
+    cursor: pointer;
+    top: 7vw;
+    right: 2vw;
+    width: 2rem;
+}
+
+main.dark{
+    background-color: #000;
     color: #fff;
-    text-decoration: none;
 }
 
 main {
