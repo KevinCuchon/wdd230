@@ -1,0 +1,23 @@
+
+@media only screen and (min-width: 38rem){
+    .hover:hover {
+        box-shadow: 0 0 50px #333; 
+    }
+    .rocorn:hover {
+        border-radius: 15px 150px;
+    }
+    .opac:hover {
+        opacity: .5;
+    }
+    .blur:hover {
+        filter: blur(4px);
+    }
+
+    .gray:hover {
+        filter: blur(1px) grayscale(50%);
+    }
+
+    .contrast:hover {
+        filter: contrast(50%);
+    }
+}
