@@ -7,24 +7,24 @@
     <meta name="description" content="Kevin Cuchon - WDD 230 - Web Frontend Development course assignment portal">
     <meta name="author" content="Kevin Edison Cuchon Morales">
     
-    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <header>
-        <h1>Course Home Page Header</h1>
+        <img src="images/dark.svg" alt="dark mode" id="darkBtn" aria-label="Toggle Dark Mode">
+        <img src="images/kevin.JPG" alt="Your Profile Image">
+        <span>Kevin Cuchon Morales</span>
     </header>
-
-    <!-- Navegación -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+    <nav id="animateme">
+        <a href="#" id="myButton">=</a>
+        <ul class="menulinks">
+            <li class="current-menu-item"><a href="#" >Home</a></li>
+            <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Survey</a></li>
+            <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
-
-    <!-- Contenido principal -->
     <main>
         <form action="record.html" method="get">
             <div>
@@ -46,17 +46,18 @@
             <div>
                 <label for="pageRating">Page Rating:</label>
                 <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1">
-                <output for="pageRating">5</output>
+                <span id="value"></span>
             </div>
             <div>
-                <button type="submit">Submit</button>
+                <button type="submit" title="Submit Form">Submit</button>
             </div>
         </form>
     </main>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Web Lab</p>
+        <p>&copy; <span id="currentYear"></span> Kevin Edison Cuchon Morales - Arequipa - Peru</p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="/scripts/form.js"></script>
 </body>
 </html>
