@@ -75,7 +75,7 @@ ul.menulinks{
     content: "x";
 }
 ul.menulinks li.current-menu-item a{
-    color: red;
+    color: rgb(0, 0, 0);
 }
 
 #darkBtn{
