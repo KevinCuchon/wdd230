@@ -1,0 +1,70 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "Diseño de Layout"
+          },
+          {
+            "url": "week01/media-query.html",
+            "title": "Media Queries"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/flexbox.html",
+            "title": "Flexbox"
+          },
+          {
+            "url": "week02/grid.html",
+            "title": "Grid"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/css-animations.html",
+            "title": "Animaciones CSS"
+          },
+          {
+            "url": "week03/css-transitions.html",
+            "title": "Transiciones CSS"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "week04/form-validation.html",
+            "title": "Validación de Formularios"
+          },
+          {
+            "url": "week04/local-storage.html",
+            "title": "Almacenamiento Local"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "week05/weather.html",
+            "title": "API del Clima"
+          },
+          {
+            "url": "week05/news.html",
+            "title": "API de Noticias"
+          }
+        ]
+      }
+    ]
+  }
+  

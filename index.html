@@ -43,7 +43,7 @@
 
             <img src="images/hero-large.webp" alt="Favorite Latter-day Temple">
         </picture>
-        <span> Lima Peru</span>
+        <span> Arequipa Peru</span>
     </div>
        
     <main>
@@ -52,7 +52,7 @@
         
         <section class="card" id="card2">
             <h2>Learning Activities</h2>
-            <ul>
+            <ul id="links-list">
 
                 <li><a href="#">Week 01</a></li>
                 <li><a href="chamber/index.html">Week 02</a></li>
@@ -63,8 +63,11 @@
         
         <section class="card">
             <h2>Information</h2>
-
-            <p>Weather: Sunny</p>
+            <p>The current temperature in Arequipa, Peru is <span id="current-temp"></span></p>
+        <figure>
+            <img id="weather-icon" src="" alt="">
+            <figcaption></figcaption>
+        </figure>
             <p>Visits: <span id="visit-counter">0</span></p>
         </section>
     </main>
@@ -79,5 +82,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
