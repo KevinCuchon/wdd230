@@ -1,5 +1,5 @@
 // Definir la URL base del repositorio GitHub
-const baseURL = "https://kevincuchon.github.io/wdd230/";
+const baseURL = "https://github.com/KevinCuchon/wdd230";
 
 // Definir la URL del archivo JSON de enlaces
 const linksURL = "https://kevincuchon.github.io/wdd230/data/links.json";
@@ -18,6 +18,7 @@ async function getLinks() {
     // Convertir la respuesta a JSON
     const data = await response.json();
 
+    console.log (data);
     // Llamar a la función para mostrar los enlaces
     displayLinks(data);
   } catch (error) {
