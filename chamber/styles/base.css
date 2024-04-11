@@ -40,16 +40,6 @@ nav ul li {
 }
 
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 .hero {
     text-align: center;
 }
@@ -167,36 +157,13 @@ input[type="submit"]:hover {
 }
 
 .membership-benefits {
+    
     width: 45%;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .form-container,
-    .membership-benefits {
-        width: 100%;
-    }
-}
-
-
-@media screen and (min-width: 768px) {
-    .membership-benefits {
-        float: right;
-        width: 50%;
-    }
-    .form-container {
-        width: 50%;
-        float: left;
-    }
-    
-}
-
 
 
 footer {

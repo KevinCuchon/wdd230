@@ -20,3 +20,39 @@
         filter: contrast(50%);
     }
 }
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .form-container,
+    .membership-benefits {
+        width: 50%;
+    }
+    footer {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+    .membership-benefits {
+
+        width: 50%;
+    }
+    .form-container {
+        width: 50%;
+    }
+    footer {
+        position: relative;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+}
