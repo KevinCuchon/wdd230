@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Welcome to the Chamber of Commerce">
+    <title>The Chamber Join Page</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="your-website-url">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>The Chamber Join Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <h2>Membership Application Form</h2>
+            <form action="thankyou.html" method="get">
+                <label for="first_name">Applicant's First Name:</label>
+                <input type="text" id="first_name" name="first_name" required><br>
+    
+                <label for="last_name">Applicant's Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required><br>
+    
+                <label for="position">Applicant's Position:</label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z\s-]{7,}" title="Must contain only letters, spaces, and hyphens, with a minimum length of 7 characters"><br>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com"><br>
+    
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+    
+                <label for="organization">Business/Organization's Name:</label>
+                <input type="text" id="organization" name="organization" required><br>
+    
+                <label for="membership_level">Membership Level:</label>
+                <select id="membership_level" name="membership_level" required>
+                    <option value="NP">NP Membership (Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select><br>
+    
+                <label for="description">Business/Organization's Description:</label>
+                <textarea id="description" name="description"></textarea><br>
+    
+                <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>NP Membership: No fee</li>
+                <li>Bronze Membership: Basic benefits</li>
+                <li>Silver Membership: Enhanced benefits</li>
+                <li>Gold Membership: Premium benefits</li>
+            </ul>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Contact | Kevin Edison Cuchon Morales | WDD 230 Project | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+    </body>
+</html>

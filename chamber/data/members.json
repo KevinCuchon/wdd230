@@ -1,0 +1,62 @@
+{
+    "members": [
+      {
+        "name": "ABC Corporation",
+        "address": "123 Main Street, Anytown, USA",
+        "phone": "(555) 123-4567",
+        "website": "https://www.abccorp.com",
+        "image": "abc-corp.jpg",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "XYZ Enterprises",
+        "address": "456 Elm Street, Othertown, USA",
+        "phone": "(555) 987-6543",
+        "website": "https://www.xyzenterprises.com",
+        "image": "xyz-enterprises.jpg",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "Sunshine Bakery",
+        "address": "789 Oak Avenue, Smalltown, USA",
+        "phone": "(555) 456-7890",
+        "website": "https://www.sunshinebakery.com",
+        "image": "sunshine-bakery.jpg",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Global Solutions Inc.",
+        "address": "321 Pine Street, Bigcity, USA",
+        "phone": "(555) 987-6543",
+        "website": "https://www.globalsolutionsinc.com",
+        "image": "global-solutions.jpg",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "Sparkle Cleaners",
+        "address": "555 Cedar Lane, Cleantown, USA",
+        "phone": "(555) 567-8901",
+        "website": "https://www.sparklecleaners.com",
+        "image": "sparkle-cleaners.jpg",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "Mountain Adventures",
+        "address": "777 Hilltop Road, Adventureville, USA",
+        "phone": "(555) 123-4567",
+        "website": "https://www.mountainadventures.com",
+        "image": "mountain-adventures.jpg",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Tech Innovations Co.",
+        "address": "888 Summit Avenue, Technocity, USA",
+        "phone": "(555) 234-5678",
+        "website": "https://www.techinnovations.com",
+        "image": "tech-innovations.jpg",
+        "membershipLevel": "Silver"
+      }
+    ]
+  }
+  
+  

@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+
 }
 
 header {
@@ -10,13 +11,22 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    width: 100%;
 }
-
+a{
+    font-size: 44px;
+}
 nav {
     background-color: #444;
     color: #fff;
     padding: 10px 0;
     text-align: center;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    border: solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
 }
 
 nav ul {
@@ -29,9 +39,6 @@ nav ul li {
     margin-right: 20px;
 }
 
-main {
-    padding: 20px;
-}
 
 footer {
     background-color: #333;
@@ -85,3 +92,158 @@ footer {
     background-color: #f9f9f9;
     border-radius: 5px;
 }
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.logo{
+    width: 100%;
+    position: absolute;
+}
+
+/* ---------------------- Join Page ------------------*/
+
+.form-container {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.membership-benefits {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .form-container,
+    .membership-benefits {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .membership-benefits {
+        float: right;
+        width: 50%;
+    }
+    .form-container {
+        width: 50%;
+        float: left;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999; 
+    }
+}
+
+
+
+footer {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+
+/* --------------------------------DIRECTORY---------------------------------------- */
+
+.member-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos para el botón de alternancia */
+.view-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.view-toggle button.active {
+    font-weight: bold;
+}
+
